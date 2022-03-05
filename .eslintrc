@@ -1,0 +1,51 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:prettier/recommended",
+    "prettier",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
+  "plugins": ["@typescript-eslint", "unused-imports", "no-autofix"],
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "legacyDecorators": true,
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "17"
+    }
+  },
+  "rules": {
+    "no-case-declarations": "off",
+    "space-before-function-paren": 0,
+    "react/prop-types": 0,
+    "react/jsx-handler-names": 0,
+    "react/jsx-fragments": 0,
+    "react/no-unused-prop-types": 0,
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "import/export": 0,
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/no-redeclare": "off",
+    "unused-imports/no-unused-imports": "off",
+    "no-autofix/unused-imports/no-unused-imports": "warn",
+    "camelcase": "off",
+    "no-unused-vars": "warn",
+    "no-useless-escape": "warn",
+    "no-prototype-builtins": "off",
+    "prefer-const": "warn",
+    "no-useless-constructor": "off",
+    "dot-notation": "off",
+    "no-sequences": "off"
+  }
+}
