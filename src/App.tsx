@@ -1,8 +1,8 @@
 import React from 'react'
-import './App.css'
+import Game from './pages/game/Game'
 
 function App() {
-  return <div />
+  return <Game />
 }
 
 export default App
