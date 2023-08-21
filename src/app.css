@@ -1,0 +1,27 @@
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice-button {
+  margin: 12px;
+  height: 200px;
+  width: 200px;
+}
+
+.submit-button {
+  margin-top: 12px;
+  background-color: deepskyblue;
+}
+
+.play-again {
+  background-color: lightslategrey;
+  color: white;
+}
