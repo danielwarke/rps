@@ -126,7 +126,7 @@ export function App() {
                 onClick={() => setPlayerChoice(choice)}
                 style={{
                   ...(playerChoice === choice && {
-                    border: "3px solid darkorange",
+                    border: "5px solid black",
                   }),
                 }}
               >
