@@ -83,18 +83,28 @@ export function App() {
       {winner && playerChoice && computerChoice ? (
         <div>
           {winner === "draw" && (
-            <h2>{`Both you and the computer played ${playerChoice}. The game is a draw 😕`}</h2>
+            <div>
+              <h2>
+                The game is a draw 😕 <br />
+                {`Both you and the computer played ${playerChoice}.`}
+              </h2>
+              <h2>{`${choiceMeta[playerChoice].emoji}=${choiceMeta[computerChoice].emoji}`}</h2>
+            </div>
           )}
           {winner === "player" && (
             <div>
+              <h1>You won! 🎉</h1>
               <h1>{`${choiceMeta[playerChoice].emoji}💥${choiceMeta[computerChoice].emoji}`}</h1>
-              <h2>{`Your ${playerChoice} ${choiceMeta[computerChoice].lostAction} the computer's ${computerChoice}. You won! 🎉`}</h2>
+              <h2>{`Your ${playerChoice} ${choiceMeta[computerChoice].lostAction} the computer's ${computerChoice}.`}</h2>
             </div>
           )}
           {winner === "computer" && (
             <div>
-              <h1>{`${choiceMeta[computerChoice].emoji}💥${choiceMeta[playerChoice].emoji}`}</h1>
-              <h2>{`The computer's ${computerChoice} ${choiceMeta[playerChoice].lostAction} your ${playerChoice}. You lost 🤖`}</h2>
+              <h1>You lost 🤖</h1>
+              <h1>
+                {`${choiceMeta[computerChoice].emoji}💥${choiceMeta[playerChoice].emoji}`}
+              </h1>
+              <h2>{`The computer's ${computerChoice} ${choiceMeta[playerChoice].lostAction} your ${playerChoice}.`}</h2>
             </div>
           )}
           <h4>
@@ -120,7 +130,7 @@ export function App() {
                   }),
                 }}
               >
-                {choice}
+                <h2>{choice}</h2>
               </button>
             ))}
           </div>
